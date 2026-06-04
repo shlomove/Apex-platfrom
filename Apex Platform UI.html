@@ -1966,7 +1966,7 @@
     <div class="landing-title">חיפוש פוליסה</div>
     <div class="landing-sub">הזן/י את מספר הפוליסה כדי להיכנס למסך החיתום</div>
     <div class="landing-search-wrap">
-      <input type="text" id="landing-input" class="landing-input" placeholder="מספר פוליסה (לדוגמה: 222)"
+      <input type="text" id="landing-input" class="landing-input" placeholder="מספר פוליסה (לדוגמה: 111)"
         autocomplete="off" onkeydown="if(event.key==='Enter')submitPolicySearch()">
       <span class="landing-search-icon">⌕</span>
     </div>
@@ -3989,11 +3989,11 @@ document.getElementById('chat-input').addEventListener('keydown', e => {
 function submitPolicySearch() {
   const val = (document.getElementById('landing-input').value || '').trim();
   const err = document.getElementById('landing-error');
-  if (val === '222') {
+  if (val === '111') {
     err.classList.remove('show');
     document.getElementById('landing').classList.add('hidden');
   } else {
-    err.textContent = 'הפוליסה לא נמצאה. נסה להזין 222';
+    err.textContent = 'הפוליסה לא נמצאה. נסה להזין 111';
     err.classList.add('show');
   }
 }
